@@ -14,6 +14,8 @@ You can install the library via pip:
 uv pip install solc-event-extractor
 `
 
+Note library was generated with python 3.12.5 version, so earlier python versions might not be compatible.
+
 # Usage
 In order to use the library, provide a raw github contract path or filepath to a .sol file. Make sure that the correct solidity version is also selected. 
 ```python
