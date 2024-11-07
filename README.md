@@ -35,3 +35,56 @@ if details:
 else:
     print("Failed to extract contract details.")
 ```
+
+## Example output:
+```Raw Contract Details:
+{'events': [ContractEvent(name='Burn',
+                          signature='Burn(indexed address owner, indexed int24 '
+                                    'tickLower, indexed int24 tickUpper, '
+                                    'uint128 amount, uint256 amount0, uint256 '
+                                    'amount1)',
+                          inputs=[ContractInput(name='owner',
+                                                type='address',
+                                                indexed=True),
+                                  ContractInput(name='tickLower',
+                                                type='int24',
+                                                indexed=True),
+                                  ContractInput(name='tickUpper',
+                                                type='int24',
+                                                indexed=True),
+                                  ContractInput(name='amount',
+                                                type='uint128',
+                                                indexed=False),
+                                  ContractInput(name='amount0',
+                                                type='uint256',
+                                                indexed=False),
+                                  ContractInput(name='amount1',
+                                                type='uint256',
+                                                indexed=False)]),
+            ContractEvent(name='Collect',
+                          signature='Collect(indexed address owner, address '
+                                    'recipient, indexed int24 tickLower, '
+                                    'indexed int24 tickUpper, uint128 amount0, '
+                                    'uint128 amount1)',
+                          inputs=[ContractInput(name='owner',
+                                                type='address',
+                                                indexed=True),
+                                  ContractInput(name='recipient',
+                                                type='address',
+                                                indexed=False),
+                                  ContractInput(name='tickLower',
+                                                type='int24',
+                                                indexed=True),
+                                  ContractInput(name='tickUpper',
+                                                type='int24',
+                                                indexed=True),
+                                  ContractInput(name='amount0',
+                                                type='uint128',
+                                                indexed=False),
+                                  ContractInput(name='amount1',
+                                                type='uint128',
+                                                indexed=False)]),
+                                                ....
+                                                
+]
+}```
